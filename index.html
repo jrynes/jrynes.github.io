@@ -12,66 +12,143 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Load jQuery first, then Bootstrap JS, then our site-specific scripts -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./assets/site.js" asp-append-version="true"></script>
+
+
+
         <!-- Add responsive meta tag for bootstrap styling-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- locate top title bar header here -->
+        <div id="header">
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand-sm fixed-top opacity-50" id="nav1">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link-image" href="#">
+                                    <svg id="Home_-_White" data-name="Home - White" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 19.5 19.49" width="24" height="24">
+                                        <g id="VzZaH5">
+                                            <path class="cls-1"
+                                                d="M15.9,4.66c0-.2,0-.38,0-.56l0-.67a1,1,0,0,1,.94-.91c.46,0,.91,0,1.37,0a1,1,0,0,1,1,1c0,1.33,0,2.67,0,4a1.06,1.06,0,0,0,.34.86c.52.5,1,1,1.53,1.52l.37.41a1,1,0,0,1,.17,1.13,1,1,0,0,1-1,.58H19.43c-.19,0-.19,0-.19.19v7.39a1.18,1.18,0,0,1-.17.69,1,1,0,0,1-.89.44c-1.09,0-2.19,0-3.28,0-.19,0-.19,0-.19-.2,0-1.9,0-3.8,0-5.7a1.55,1.55,0,0,0-.46-1.17,1.27,1.27,0,0,0-.85-.37c-.94,0-1.88,0-2.82,0a1.4,1.4,0,0,0-1.26,1.24c0,.18,0,.35,0,.52,0,1.82,0,3.64,0,5.46,0,.22,0,.22-.23.22H5.84a1,1,0,0,1-1.09-1.09v-7.4c0-.22,0-.22-.22-.22H3.32a1.14,1.14,0,0,1-.65-.2,1,1,0,0,1-.25-1.36,2.68,2.68,0,0,1,.4-.49Q6.9,5.89,11,1.81a2.71,2.71,0,0,1,.41-.35,1,1,0,0,1,1.28.06c.17.14.33.3.49.46L15,3.81l.81.78Z"
+                                                transform="translate(-2.25 -1.26)" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SAMPLE WORK
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">OVERVIEW</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Weekend Update</a>
+                                    <a class="dropdown-item" href="#">Nature Database</a>
+                                    <a class="dropdown-item" href="#">SLDMS</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Surveypage.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
     </head>
 
     <!-- Body -->
 
-    <body data-spy="scroll" data-offset="0" data-target="#theMenu">
-
-        <!-- Menu -->
-        <nav class="menu" id="theMenu">
-            <div class="menu-wrap">
-                <h1 class="logo"><a href="index.html#home">Minimal</a></h1>
-                <i class="icon-remove menu-close"></i>
-                <a href="#home" class="smoothScroll">Home</a>
-                <a href="#about" class="smoothScroll">About</a>
-                <a href="#portfolio" class="smoothScroll">Portfolio</a>
-                <a href="#contact" class="smoothScroll">Contact</a>
-                <a href="#"><i class="icon-facebook"></i></a>
-                <a href="#"><i class="icon-twitter"></i></a>
-                <a href="#"><i class="icon-dribbble"></i></a>
-                <a href="#"><i class="icon-envelope"></i></a>
-            </div>
-
-            <!-- Menu button -->
-            <div id="menuToggle"><i class="icon-reorder"></i></div>
-        </nav>
-
-
+    <body>
 
         <!-- ========== HEADER SECTION ========== -->
         <section id="home" name="home"></section>
         <div id="headerwrap">
             <div class="container">
-                <div class="logo">
-                    <!-- Local debug path for image -->
-                    <img src="./assets/logo.png">
-                    <!-- <img src="https://jrynes.github.io/docs/assets/img/logo.png"> -->
-                </div>
-                <br>
+                <!-- <div class="logo"> -->
+                <!-- Debug path for image -->
+                <!-- <img src="./assets/logo.png">
+                </div> -->
+                <!-- <br> -->
                 <div class="row">
-                    <h1>MINIMAL THEME</h1>
-                    <br>
-                    <h3>Hello, I'm Jeff. I love design.</h3>
-                    <br>
-                    <br>
-                    <div class="col-lg-6 col-lg-offset-3">
+                    <div class="col">
+                        <!-- <h1>MINIMAL THEME</h1> -->
+                        <br>
+                        <h3>Hello, I'm Jeff. </h3>
+                        <br>
+                        <h4>I love good code and design<span style="color: orange">.</span></h4>
+                        <br>
+                        <br>
+                        <!-- <div class="col-lg-6 col-lg-offset-3">
+                        </div> -->
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./assets/Weekend_Update2.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Weekend Update</h5>
+                                <p class="card-text">Use an AWS Lambda instance to scrape websites and compile an update
+                                    of activities and information.</p>
+                                <a href="#" class="btn btn-orange">To the project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./assets/Nature_Database_Color.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Nature Database</h5>
+                                <p class="card-text">Electron desktop application with a SQLite database to track and
+                                    update plant and animal sightings.</p>
+                                <a href="#" class="btn btn-orange">To the project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./assets/SLDMS.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">SLDMS</h5>
+                                <p class="card-text">Serverless SQL database and web interface to provide a best-fit
+                                    analysis for open job positions.</p>
+                                <a href="#" class="btn btn-orange">To the project</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div><!-- /container -->
         </div><!-- /headerwrap -->
+
+        <!-- CARDS SECTION -->
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
 
 
 
@@ -80,65 +157,89 @@
         <div id="f">
             <div class="container">
                 <div class="row">
-                    <h3>ABOUT ME</h3>
-                    <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i
-                            class="icon icon-circle"></i></p>
+                    <div class="col">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            About
+                                        </button>
+                                    </h5>
+                                </div>
 
-                    <!-- INTRO INFORMATIO-->
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <p>A full time theme crafter based in Madrid, Spain. I love designing beautiful, clean and
-                            user-friendly interfaces for websites.</p>
-                        <p>My passion is turning good ideas and products into eye-catching sites.</p>
-                        <p>Sometimes I blog about design and web trends. Also I share links and my thoughts on <a
-                                href="http://twitter.com/BlackTie_co">Twitter</a>. Need a free handsome bootstrap theme?
-                            <a href="http://blacktie.co">Done!</a></p>
-                        <p>I'm available for freelance jobs. Contact me now.</p>
-                        <p><button type="button" class="btn btn-warning">I HAVE A FREELANCE JOB</button></p>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Volunteering
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Education
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div><!-- /container -->
         </div><!-- /f -->
 
-
-        <!-- ========== CAROUSEL SECTION ========== -->
-        <section id="portfolio" name="portfolio"></section>
-        <div id="f">
-            <div class="container">
-                <div class="row centered">
-                    <h3>SOME PROJECTS</h3>
-                    <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i
-                            class="icon icon-circle"></i></p>
-
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                <div class="item active centered">
-                                    <img class="img-responsive" src="./assets/c1.png" alt="">
-                                </div>
-                                <div class="item centered">
-                                    <img class="img-responsive" src="./assets/c2.png" alt="">
-                                </div>
-                                <div class="item centered">
-                                    <img class="img-responsive" src="./assets/c3.png" alt="">
-                                </div>
-                            </div>
-                            <br>
-                            <br>
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                        </div>
-                    </div><!-- col-lg-8 -->
-                </div><!-- row -->
-            </div><!-- container -->
-        </div> <!-- f -->
-
         <!-- ========== CONTACT SECTION ========== -->
         <section id="contact" name="contact"></section>
-        <div id="f">
+        <!-- <div id="f">
             <div class="container">
                 <div class="row">
                     <h3>CONTACT ME</h3>
@@ -152,7 +253,23 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+
+
     </body>
+
+    <!-- Call our script on page load here -->
+    <!-- <script type="text/javascript">
+        $(document).on('load', function () {
+            replaceSVG();
+            console.log("Success")
+        });
+    </script> -->
+
+    <!-- <script type="text/javascript">
+        $(function () { replaceSVG() });
+    </script> -->
+
 
 </html>
