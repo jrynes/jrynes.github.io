@@ -1,86 +1,10 @@
+/* ========== Formatting used on the home page fixed top navbar ========== */
 .fixed-top{
     background: rgba(0, 0, 0, 0.5);
-    /* opacity: 40%;
-    filter:opacity(40); */
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* #nav1{
-    background: rgba(255, 255, 255, 0.5);
-    /* opacity: 40%;
-    filter:opacity(40);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-} */
-
-.nav-link {
-color: white;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: 800;
-margin-left: 20px;
-/* opacity: 100%; */
-z-index: 1;
-text-shadow: 1px 1px 2px rgb(80, 80, 80);
-}
-
-.nav-link-image{
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    -webkit-filter: drop-shadow( 2px 4px 2px rgba(0, 0, 0, .2));
-    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-    /* Similar syntax to box-shadow */
-    margin-left: 20px;
-}
-
-.nav-link-image:hover{
-    /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); */
-    -webkit-filter: drop-shadow( 2px 4px 2px rgba(0, 0, 0, .2));
-    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-}
-
-
-
-.navbar-brand{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    /* margin-left: 20px; */
-    /* opacity: 100%; */
-    z-index: 2;
-}
-
-body {
-    background-color: #222222;
-      font-family: 'EB Garamond', serif;
-      font-weight: 300;
-      font-size: 16px;
-      color: #555;
-  
-      -webkit-font-smoothing: antialiased;
-      -webkit-overflow-scrolling: touch;
-  }
-
-  #headerwrap {
-    background: url(../assets/header-bg.jpg) no-repeat center top;
-    margin-top: 0px;
-    padding-top:80px;
-    text-align:center;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 700px;
-    width: 100%;
-    
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
-}
-
+/* ========== Dropdown menu in top navbar ========== */
 .dropdown .dropdown-menu {
     -webkit-transition: all 0.32s;
     -moz-transition: all 0.32s;
@@ -93,31 +17,104 @@ body {
     opacity: 0;
     transform: translateX(-25%) scaleY(0);
     transform-origin: top;
-  }
+}
 
 .dropdown-menu.show {
-opacity: 1;
-transform: translateX(-25%) scaleY(1);
+    opacity: 1;
+    transform: translateX(-25%) scaleY(1);
 }
 
-#f{
-background-color: #1C1C1C;
-color: white;
+/* ========== Navbar elements ========== */
+.nav-link {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin-left: 20px;
+    z-index: 1;
+    text-shadow: 1px 1px 2px rgb(80, 80, 80);
 }
 
-/* Titles */
+.nav-link-image{
+    -webkit-filter: drop-shadow( 2px 4px 2px rgba(0, 0, 0, .2));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    /* Similar syntax to box-shadow */
+    margin-left: 20px;
+}
+
+.nav-link-image:hover{
+    -webkit-filter: drop-shadow( 2px 4px 2px rgba(0, 0, 0, .2));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+.navbar-brand{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    z-index: 2;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+svg:hover{
+    fill:orange;
+}
+
+
+#Github_-_White{
+    width: 72px !important;
+    margin-top: 5px;
+}
+
+/* ========== Formatting for general HTML body elements ========== */
+body {
+    background-color: #222222;
+      font-family: 'EB Garamond', serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #555;
+      -webkit-font-smoothing: antialiased;
+      -webkit-overflow-scrolling: touch;
+  }
+
+/* ========== Titles ========== */
 h1, h2, h3, h4, h5, h6 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: white;
 }
 
-.card-title{
-    color:  #1C1C1C;
+
+/* ========== Formatting used for the mountain image and associated "header" elements on each page ========== */
+#headerwrap {
+    background: url(../assets/header-bg.jpg), url(./header-bg.jpg) no-repeat center top;
+    margin-top: 0px;
+    padding-top:80px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 700px;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
 }
 
-.card-text{
-    color:  #4f4f4f;
+
+#f{
+    background-color: #1C1C1C;
+    color: white;
 }
 
 .btn-orange{
@@ -127,6 +124,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-orange:hover{
     background-color: orangered !important;
+}
+
+/* ========== Formatting used on the home page card elements ========== */
+.card-title{
+    color:  #1C1C1C;
+}
+
+.card-text{
+    color:  #4f4f4f;
 }
 
 .card{
@@ -141,38 +147,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .cardHeading{
     color: orange !important;
-    /* background:rgb(80, 80, 80) !important; */
-}
-
-.card > .card-header {
-    /* opacity: 50; */
 }
 
 .card-body{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-svg {
-    width: 24px;
-    height: 24px;
-    fill: #fff;
-}
-
-#Github_-_White{
-    width: 72px !important;
-    margin-top: 5px;
-}
-
-svg:hover{
-    fill:orange;
 }
 
 .cards-wrapper {
     display: flex;
     justify-content: center;
-    }
+}
 
 #myCarousel{
     display:flex;
@@ -181,6 +166,15 @@ svg:hover{
 
 .cardLink{
     color:orange;
+}
+
+/* ========== Formatting used on the individual project write-up pages ========== */
+.projectHeading{
+    color: orange;
+}
+
+.techList{
+    text-align: left;
 }
 
     
