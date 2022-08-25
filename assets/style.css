@@ -1,3 +1,18 @@
+.fixed-top{
+    background: rgba(0, 0, 0, 0.5);
+    /* opacity: 40%;
+    filter:opacity(40); */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* #nav1{
+    background: rgba(255, 255, 255, 0.5);
+    /* opacity: 40%;
+    filter:opacity(40);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+} */
+
 .nav-link {
 color: white;
 font-family: Arial, Helvetica, sans-serif;
@@ -13,6 +28,7 @@ text-shadow: 1px 1px 2px rgb(80, 80, 80);
     -webkit-filter: drop-shadow( 2px 4px 2px rgba(0, 0, 0, .2));
     filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
     /* Similar syntax to box-shadow */
+    margin-left: 20px;
 }
 
 .nav-link-image:hover{
@@ -22,16 +38,6 @@ text-shadow: 1px 1px 2px rgb(80, 80, 80);
 }
 
 
-
-​
-
-#nav1{
-    background: rgba(255, 255, 255, 0.5);
-    /* opacity: 40%;
-    filter:opacity(40); */
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-}
 
 .navbar-brand{
     color: white;
@@ -56,7 +62,7 @@ body {
   #headerwrap {
     background: url(../assets/header-bg.jpg) no-repeat center top;
     margin-top: 0px;
-    padding-top:65px;
+    padding-top:80px;
     text-align:center;
     background-attachment: relative;
     background-position: center center;
@@ -89,50 +95,92 @@ body {
     transform-origin: top;
   }
 
-  .dropdown-menu.show {
-    opacity: 1;
-    transform: translateX(-25%) scaleY(1);
-  }
+.dropdown-menu.show {
+opacity: 1;
+transform: translateX(-25%) scaleY(1);
+}
 
-  #f{
-    background-color: #1C1C1C;
+#f{
+background-color: #1C1C1C;
+color: white;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
     color: white;
-  }
+}
 
-    /* Titles */
-    h1, h2, h3, h4, h5, h6 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 300;
-        color: white;
-    }
+.card-title{
+    color:  #1C1C1C;
+}
 
-    .card-title{
-        color:  #1C1C1C;
-    }
+.card-text{
+    color:  #4f4f4f;
+}
 
-    .card-text{
-        color:  #4f4f4f;
-    }
+.btn-orange{
+    background: orange !important;
 
-    .btn-orange{
-        background: orange !important;
+}
 
-    }
+.btn-orange:hover{
+    background-color: orangered !important;
+}
 
-    .btn-orange:hover{
-        background-color: orangered !important;
-    }
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow 0.7s;
+}
+
+.card:hover{
+    -webkit-transition: all 0.32s;
+    box-shadow: 0 4px 8px 0 rgba(255, 183, 0, 0.5), 0 6px 20px 0 rgba(255, 183, 0, 0.5);
+}
+
+.cardHeading{
+    color: orange !important;
+    /* background:rgb(80, 80, 80) !important; */
+}
+
+.card > .card-header {
+    /* opacity: 50; */
+}
+
+.card-body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     
-    .card{
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+#Github_-_White{
+    width: 72px !important;
+    margin-top: 5px;
+}
+
+svg:hover{
+    fill:orange;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
     }
 
-    svg {
-        width: 24px;
-        height: 24px;
-        fill: #fff;
-      }
+#myCarousel{
+    display:flex;
+    justify-content: center;
+}
 
-    svg:hover{
-        fill:orange;
-    }
+.cardLink{
+    color:orange;
+}
+
+    
